@@ -50,6 +50,8 @@ namespace IMath
 	float radtoDeg(float pRad);
 
 	float convertDegToRad(float pDegree);
+
+	float arrayAverage(float pValues[]);
 }
 #endif // !_IMATH_H_
 

@@ -205,3 +205,13 @@ float IMath::radtoDeg(float pRad)
 {
 	return radToDeg() * pRad;
 }
+
+float IMath::convertDegToRad(float degree)
+{
+	return degToRad() * degree;
+}
+
+float IMath::arrayAverage(float pValues[])
+{
+	return arraySum(pValues) / sizeof(pValues);
+}
