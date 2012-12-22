@@ -2,6 +2,7 @@
 #include "IMath.h"
 #include <random>
 #include <math.h>
+#define PI 3.14159265358979323846
 
 using namespace IMath;
 
@@ -173,4 +174,34 @@ int IMath::nextPowerOfTwo(float f)
 bool IMath::isPowerOfTwo(int n)
 {
 	return ((n != 0) && (n & (n - 1)) == 0);
+}
+
+float IMath::atan2(const float dY, const float dX, const float dZ)
+{
+	return atan2f(dY, dX);
+}
+
+float radToDeg()
+{
+	return 180.0f / PI;
+}
+
+float degToRad()
+{
+	return PI / 180.0f;
+}
+
+float piHalf()
+{
+	return PI * 0.5f;
+}
+
+float piTwice()
+{
+	return PI * 2.0f;
+}
+
+float IMath::radtoDeg(float pRad)
+{
+	return radToDeg() * pRad;
 }

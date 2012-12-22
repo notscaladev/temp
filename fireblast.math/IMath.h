@@ -44,6 +44,12 @@ namespace IMath
 	int nextPowerOfTwo(float f);
 
 	bool isPowerOfTwo(int n);
+
+	float atan2(const float dY, const float dX, const float dZ);
+
+	float radtoDeg(float pRad);
+
+	float convertDegToRad(float pDegree);
 }
 #endif // !_IMATH_H_
 
