@@ -6,6 +6,8 @@ namespace IMath
 	int signum(const int n);
 
 	int sum(int values[]);
+
+	void arraySumInternal(int pValues[]);
 }
 #endif // !_IMATH_H_
 

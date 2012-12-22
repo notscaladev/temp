@@ -30,3 +30,13 @@ int IMath::sum(int value[])
 	delete[] value;
 	return sum;
 }
+
+void IMath::arraySumInternal(int val[])
+{
+	const int count = sizeof(val);
+
+	for(int i = 0; i < count; i++)
+	{
+		val[i] = val[i-1] + val[i];
+	}
+}
