@@ -18,3 +18,15 @@ int IMath::signum(int n){
 		return 1;
 	}
 }
+
+int IMath::sum(int value[])
+{
+	int sum = 0;
+	for(int i = sizeof(value) -1; i >= 0; i--)
+	{
+		sum += value[i];
+	}
+
+	delete[] value;
+	return sum;
+}

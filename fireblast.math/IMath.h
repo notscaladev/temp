@@ -4,6 +4,8 @@
 namespace IMath
 {
 	int signum(const int n);
+
+	int sum(int values[]);
 }
 #endif // !_IMATH_H_
 
