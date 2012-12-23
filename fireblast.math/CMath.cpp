@@ -215,3 +215,26 @@ float IMath::arrayAverage(float pValues[])
 {
 	return arraySum(pValues) / sizeof(pValues);
 }
+
+float IMath::rotateAroundCenter(float pVertices[], float pRotation, float pRotationCenterX, 
+		float pRotationCenterY, float pRotationCenterZ)
+{
+	if(pRotation != 0)
+	{
+		float rotationRad = convertDegToRad(pRotation);
+		float sinRotationRad = sin(rotationRad);
+		float cosRotationInRad = cos(rotationRad);
+
+		for(int i = sizeof(pVertices) - 2; i >= 0; i -= 2)
+		{
+			float pX = pVertices[i];
+			float pY = pVertices[i + 1];
+			float pZ = pVertices[i + 2];
+			pVertices[i] = pRotationCenterX + (cosRotationInRad * (pX - pRotationCenterX) - sinRotationRad * (pY - pRotationCenterY));
+			pVertices[i + 1] = pRotationCenterY + (sinRotationRad * (pX - pRotationCenterX) + cosRotationInRad * (pY - pRotationCenterY));
+			pVertices[i + 2] = pRotationCenterZ + (sinRotationRad * (pZ - pRotationCenterX) + cosRotationInRad * (pZ - pRotationCenterZ));
+		}
+	}
+
+	return 0;
+}

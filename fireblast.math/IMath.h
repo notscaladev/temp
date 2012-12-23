@@ -52,6 +52,9 @@ namespace IMath
 	float convertDegToRad(float pDegree);
 
 	float arrayAverage(float pValues[]);
+
+	float rotateAroundCenter(float pVertices[], float pRotation, float pRotationCenterX, 
+		float pRotationCenterY, float pRotationCenterZ);
 }
 #endif // !_IMATH_H_
 
