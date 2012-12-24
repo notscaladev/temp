@@ -5,3 +5,8 @@
 /fireblast.editor/obj
 /fireblast.math/Debug
 /fireblast.util/Debug
+/fireblast.assets/Debug
+/fireblast.camera/Debug
+/fireblast.core/Debug
+/fireblast.physics/Debug
+/fireblast.rendering/Debug
