@@ -7,6 +7,7 @@
 
 #include "targetver.h"
 #include "color.h"
+#include "generic_pool.h"
 
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
 // Windows Header Files:
