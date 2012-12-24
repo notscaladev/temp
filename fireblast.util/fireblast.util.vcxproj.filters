@@ -36,6 +36,9 @@
     <ClInclude Include="color_pool.h">
       <Filter>color</Filter>
     </ClInclude>
+    <ClInclude Include="generic_pool.h">
+      <Filter>color</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
